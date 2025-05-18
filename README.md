@@ -1,50 +1,51 @@
 # Selenium-Python-Example
+This repository demonstrates a UI automation testing solution built with Python and Selenium WebDriver, following the Page Object Model (POM) design pattern.
 
-This repository contains the base setup of an UI testing project,
-using Python, Selenium Webdriver and Page Object Model pattern.
+Example Test Case:
+A basic search functionality test on DuckDuckGo to verify that search results are properly displayed.
 
-A simple search in DuckDuckGo to check that results are displayed is used as example
+Prerequisites
+Python 3.12.3
 
-# Requirements
+Latest versions of pip and setuptools
 
-* Python 3.12.3
-* pip (24.0) and setuptools
-* [venv](<https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/>) (recommended)
+Virtual environment (venv) recommended
 
-# Instalation
+Setup Instructions
+Clone/download this repository.
 
-Assuming python, pip and venv are installed correctly:
+Navigate to the project root:
 
-1. Download or clone this repository 
-2. Open a terminal
-3. Go to the project root directory "/selenium-python-example/".
-4. Create a virtual environment: 
-   - (UBUNTU): `python3 -m venv .venv`
-   - (WINDOWS): `py -m venv venv`
-5. Activate the virtual environment executing the following script: 
-   - (UBUNTU): `source .venv/bin/activate`
-   - (WINDOWS): `.\venv\Scripts\activate`
-6. Execute the following command to download the necessary libraries:  `pip install -r requirements.txt`
+bash
+cd selenium-python-example/  
+Create & activate a virtual environment:
 
+Linux/Mac:
 
-# Test Execution
+bash
+python3 -m venv .venv  
+source .venv/bin/activate  
+Windows:
 
-1. Open a terminal
-2. From the project root directory run: `pytest -v --html=results/report.html`
+cmd
+py -m venv venv  
+.\venv\Scripts\activate  
+Install dependencies:
 
-# Configuration
+bash
+pip install -r requirements.txt  
+Running Tests
+Execute tests with the following command:
 
-By default, tests will be executed in Chrome (normal mode). Preferences can be changed in "/data/config.yaml" file
+bash
+pytest -v --html=results/report.html  
+Configuration
+Default browser: Chrome (headless mode available). Modify settings in /data/config.yaml.
 
-# Results
+Test Reports
+View results in:
 
-To check the report, open the '/results/report.html' file once the execution has finished.
+/results/report.html  
 
-
-# Links
-   
-   [Selenium - Python Documentation](<https://selenium-python.readthedocs.io/>)
-   
-   [Webdriver Manager for Python](<https://github.com/SergeyPirogov/webdriver_manager>)
    
    
